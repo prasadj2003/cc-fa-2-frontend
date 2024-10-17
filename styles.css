@@ -1,0 +1,171 @@
+/* General body styling */
+body {
+  font-family: 'Arvo', serif;
+  background-color: #f0f0f0;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.set {
+  display: inline-block;
+}
+
+.drum {
+  border: 4px solid #ddd;
+  padding: 15px 30px;
+  font-size: 2rem;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.drum:hover {
+  background-color: #4CAF50;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+footer {
+  margin-top: 50px;
+  color: #666;
+}
+
+button {
+  background-color: #4CAF50;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Tunes list section */
+#tunesList {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tune-item {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tune-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tune-item p {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+.tune-item button {
+  background-color: #2196F3;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.tune-item button:hover {
+  background-color: #1976d2;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 600px) {
+  .tune-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .tune-item button {
+    margin-top: 10px;
+  }
+}
+
+/* Existing styles... */
+
+#tunesSection {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #e8f5e9; /* Light green background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#tunesSection h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.tune-item {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Remaining styles... */
+
+
+#toggleTunesButton {
+  margin-bottom: 10px;
+  background-color: #2196F3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#toggleTunesButton:hover {
+  background-color: #1976d2;
+}
+
+.pressed {
+  /* Add animation styles here, e.g., */
+  transform: scale(0.9);
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
