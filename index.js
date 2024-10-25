@@ -55,7 +55,7 @@ document.addEventListener("keydown", function(event) {
 
 // Save the recorded tune to the backend
 function saveTune() {
-  fetch("http://54.83.166.207:3000/save-tune", {
+  fetch("http://34.239.186.60:3000/save-tune", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -72,8 +72,9 @@ function saveTune() {
 }
 
 // Fetch saved tunes from the backend
+function fetchTunes() {
 console.log("Fetching tunes..."); // To check if this is triggered
-fetch("http://54.83.166.207:3000/get-tunes")
+fetch("http://34.239.186.60:3000/get-tunes")
   .then(response => response.json())
   .then(data => {
     console.log("Fetched tunes:", data); // Log the fetched tunes
@@ -83,6 +84,7 @@ fetch("http://54.83.166.207:3000/get-tunes")
     console.error("Error fetching tunes:", error);
     alert("Failed to fetch tunes.");
   });
+}
 
 // Display the tunes with Play button
 // ---------------------------------------This work------------------------------------
